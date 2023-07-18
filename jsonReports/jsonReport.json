@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 5849.470000000671
+      "totalTime": 4877.250999998301
     },
     "preserveOutput": "always",
     "reporter": [
@@ -48,7 +48,7 @@
         "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "tests/7_windows.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,13 +61,13 @@
   },
   "suites": [
     {
-      "title": "tests\\4_alerts.test.ts",
-      "file": "tests/4_alerts.test.ts",
+      "title": "tests\\7_windows.test.ts",
+      "file": "tests/7_windows.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Bootstrap Modal alert",
+          "title": "interact with multiple tabs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,21 +81,34 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5009,
+                  "duration": 3869,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "No. of Tabs 3\n"
+                    },
+                    {
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/lambdatest/\n"
+                    },
+                    {
+                      "text": "https://twitter.com/i/flow/login?redirect_after_login=%2Fintent%2Ffollow%3Fscreen_name%3DLambdatesting\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-18T12:07:40.961Z",
+                  "startTime": "2023-07-18T14:54:14.021Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "7bbe4097d4b2689f53ec-45110b23d8efc86614cd",
-          "file": "tests/4_alerts.test.ts",
-          "line": 53,
+          "id": "fc7233278eac576c95db-6f7a28192d9cce4bcc25",
+          "file": "tests/7_windows.test.ts",
+          "line": 22,
           "column": 5
         }
       ]

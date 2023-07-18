@@ -4,40 +4,38 @@
 import {expect, test} from "@playwright/test";
 
 
-test("interact with frames", async({page}) => {
+test("interact with tabs", async({page}) => {
 
-    await page.goto("https://letcode.in/frame");
-    const allFrames = page.frames();  //array
-    console.log("No. of Frames = " + allFrames.length)
-//interact mit page
-    const myFrame = page.frame("firstFr");    //mit dem Name
-    await myFrame?.fill("input[name='fname']","kouschik");  //hier bedeutet ?, if myFrame != 0
-    await myFrame?.fill("input[name='lname']","chatter"); 
+    await page.goto("https://www.lambdatest.com/selenium-playground/window-popup-modal-demo");
+    console.log(page.url());
 
-    expect(await myFrame?.locator("p.has-text-info").textContent()).toContain("chatter");
-    await page.waitForTimeout(3000);
-})
+    const [newWindow] = await Promise.all([            //array
+        page.waitForEvent("popup"),
+        page.click("'Follow On Twitter'")
+    ]);
 
-//video min 2.20
-test("frame locater", async({page}) => {
-
-    await page.goto("https://letcode.in/frame");
-    const allFrames = page.frames();  
-    console.log("No. of Frames = " + allFrames.length)
-//interact mit frame
-    const frame = page.frameLocator("#firstFr")    //mit Id
-    await frame.locator("input[name='fname']").fill("kouschik");
-    await frame.locator("input[name='lname']").fill("chatter");
-
-    //innerFrame
-    const innerFrame = page.frameLocator("iframe[src='innerFrame']");
-    innerFrame.locator("input[name='email']").fill("koschik@gmail.com")
-   
-    await page.waitForTimeout(3000);
+    console.log(newWindow.url());
+    //newWindow.fill("","");   usw...
 })
 
 
+test("interact with multiple tabs", async({page}) => {
 
+    await page.goto("https://www.lambdatest.com/selenium-playground/window-popup-modal-demo");
+    
+    const [multiPage] = await Promise.all([
+        page.waitForEvent("popup"),
+        page.click("#followboth")                 //id
+    ]);
 
+    await page.waitForLoadState();                 //wait till loading all pages
 
-
+    const pages = multiPage.context().pages();
+    console.log('No. of Tabs ' + pages.length);
+    
+    //to print all urls;    
+    pages.forEach(tab => {
+        console.log(tab.url());
+    })
+    
+})

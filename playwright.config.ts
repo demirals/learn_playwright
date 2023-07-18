@@ -1,7 +1,7 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
 // testMatch : zu führende tests hier schreiben, wenn wir commentieren testmatch, erscheint play buttons    
-testMatch: ["tests/6_frames.test.ts"],
+testMatch: ["tests/7_windows.test.ts"],
  use: {
   headless:false,
   screenshot: "only-on-failure",
