@@ -1,5 +1,5 @@
-//frames handling
-//video min 2.07
+//window & tabs handling
+//video min 2.26
 
 import {expect, test} from "@playwright/test";
 
