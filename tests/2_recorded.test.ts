@@ -23,7 +23,7 @@ const page = await context.newPage(); */
   await page.getByRole('button', { name: 'Login' }).click();
   await page.hover("//a[@data-toggle='dropdown']//span[contains(.,'My account')]");
   await page.getByRole('link', { name: 'Logout', exact: true }).click();
-//  await expect(page).toHaveURL("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
+ // await expect(page).toHaveURL("https://ecommerce-playground.lambdatest.io/");
 });
 
 

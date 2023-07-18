@@ -17,7 +17,8 @@ test("login test demo", async () => {
   //await page.click("text=Login");              oder für text >>
   await page.click("'Login'");
   //config Datei >> testMatch: ["tests/1_login.test.ts"],   dann
-  //für execution >> npx playwright test
+  //für execution >> npx playwright test, 
+  //wenn wir in packace.json datei '"test": "npx playwright test"' schreiben, das Befehl "npm test" gilt. 
   await page.fill("input[id=input-email]", "koushik350@gmail.com");
   await page.fill("input[id=input-password]", "Pass123$");
   await page.click("//input[@value='Login']");
