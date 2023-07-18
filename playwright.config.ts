@@ -1,6 +1,7 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
-testMatch: ["tests/2_recorded.test.ts"],
+// testMatch : zu führende tests hier schreiben    
+testMatch: ["tests/3_basicInteractions.test.ts"],
  use: {
   headless:false,
   screenshot: "only-on-failure",
@@ -10,7 +11,7 @@ testMatch: ["tests/2_recorded.test.ts"],
   }
  },
  retries: 0,
- //reporting, video min 44.40   >> öffnen index.html datei mit browser in playwright-report 
+ //reporting, video min 44.40 - 60.00  >> öffnen index.html datei mit browser in playwright-report 
  //Grün "dot" oder F,  erfolgreich oder nicht.  
  reporter: [["dot"], ["json", {         
   outputFile: "jsonReports/jsonReport.json"
