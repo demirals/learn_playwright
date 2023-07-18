@@ -1,7 +1,7 @@
 //window & tabs handling
 //video min 2.26
 
-import {expect, test} from "@playwright/test";
+import {expect, test, Page} from "@playwright/test";
 
 
 test("interact with tabs", async({page}) => {
@@ -37,5 +37,20 @@ test("interact with multiple tabs", async({page}) => {
     pages.forEach(tab => {
         console.log(tab.url());
     })
+
+    //interacting with pages alone; 
+            //await pages[1].fill("", "");
+    //but there is another way to do it >> for loop. to find the right page   //video min 2.38
+    
+    let facebookPage: Page;              //Page 
+    for (let index = 0; index < pages.length; index++) {
+                const url = pages[index].url()
+                if (url == "https://www.facebook.com/lambdatest/") {
+                    facebookPage = pages[index];
+                }
+    }
+
+    const text = await facebookPage.textContent("//h1")             //compile error, that is not problem. 
+    console.log(text)
     
 })

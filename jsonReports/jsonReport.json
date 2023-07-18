@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 4877.250999998301
+      "totalTime": 5685.019000001252
     },
     "preserveOutput": "always",
     "reporter": [
@@ -81,7 +81,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 3869,
+                  "duration": 4630,
                   "errors": [],
                   "stdout": [
                     {
@@ -95,11 +95,14 @@
                     },
                     {
                       "text": "https://twitter.com/i/flow/login?redirect_after_login=%2Fintent%2Ffollow%3Fscreen_name%3DLambdatesting\n"
+                    },
+                    {
+                      "text": "LambdaTest\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-18T14:54:14.021Z",
+                  "startTime": "2023-07-18T15:16:11.662Z",
                   "attachments": []
                 }
               ],
