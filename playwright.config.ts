@@ -1,6 +1,6 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
- //testMatch: ["tests/frames.test.ts"],
+testMatch: ["tests/1A_recorded.test.ts"],
  use: {
   headless:false,
   screenshot: "only-on-failure",
