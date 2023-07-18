@@ -1,3 +1,5 @@
+//video min 1.48
+
 import {_baseTest, test} from "@playwright/test"
 
 

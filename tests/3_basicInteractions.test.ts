@@ -1,5 +1,6 @@
 import {expect, test} from "@playwright/test";
 //video tutorial min. 60.00
+//execute specific test with "test.only(...)"
 //commentieren multi lines  >>  shift + alt + a
 //oder    test.only("checkbox", async ({page}) => {
 
@@ -38,7 +39,7 @@ test("sum", async ({page}) => {
 test("checkbox", async ({page}) => {
 
     await page.goto("https://www.lambdatest.com/selenium-playground/checkbox-demo");
-    const singleCheckbox = await page.locator("id=isAgeSelected");
+    const singleCheckbox = await page.locator("id=isAgeSelected");  //manchmal "$"" ist genutzt für "locater"
     expect(singleCheckbox).not.toBeChecked();
     await singleCheckbox.check();
     expect(singleCheckbox).toBeChecked();
