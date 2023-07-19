@@ -75,3 +75,6 @@ test.only("Upload files other way", async ({ page }) => {
 
 //there is another way to download files to a target ; 
 //page.on('download', download => download.path().then(console.log));
+
+
+//POM video min. 3.34
