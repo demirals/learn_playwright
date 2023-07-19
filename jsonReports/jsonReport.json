@@ -1,7 +1,5 @@
 {
   "config": {
-    "configFile": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
-    "rootDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -10,11 +8,23 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1,
-      "totalTime": 5685.019000001252
-    },
+    "metadata": {},
     "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/8_calendar.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
     "reporter": [
       [
         "dot",
@@ -37,37 +47,24 @@
       "max": 5,
       "threshold": 15000
     },
+    "configFile": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
+    "rootDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
     "quiet": false,
-    "projects": [
-      {
-        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "",
-        "name": "",
-        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "tests/7_windows.test.ts"
-        ],
-        "timeout": 30000
-      }
-    ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.36.1",
+    "version": "1.32.3",
     "workers": 8,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\7_windows.test.ts",
-      "file": "tests/7_windows.test.ts",
+      "title": "tests\\8_calendar.test.ts",
+      "file": "tests/8_calendar.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "interact with multiple tabs",
+          "title": "Calendar demo using moment",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,38 +78,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4630,
+                  "duration": 24445,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No. of Tabs 3\n"
-                    },
-                    {
-                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
-                    },
-                    {
-                      "text": "https://www.facebook.com/lambdatest/\n"
-                    },
-                    {
-                      "text": "https://twitter.com/i/flow/login?redirect_after_login=%2Fintent%2Ffollow%3Fscreen_name%3DLambdatesting\n"
-                    },
-                    {
-                      "text": "LambdaTest\n"
+                      "text": "this month ?false\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-18T15:16:11.662Z",
+                  "startTime": "2023-07-19T10:07:05.908Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "fc7233278eac576c95db-6f7a28192d9cce4bcc25",
-          "file": "tests/7_windows.test.ts",
-          "line": 22,
-          "column": 5
+          "id": "299738994f767a9c10d6-f8c42cd0004f23f9b722",
+          "file": "tests/8_calendar.test.ts",
+          "line": 47,
+          "column": 6
         }
       ]
     }
