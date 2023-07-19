@@ -65,7 +65,7 @@
       "specs": [
         {
           "title": "Calendar demo using moment",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -77,21 +77,45 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 24445,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 30010,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "message": "Pending operations:\n  - locator.click at tests\\8_calendar.test.ts:80:28\n"
+                    }
+                  ],
                   "stdout": [
+                    {
+                      "text": "this month ?true\n"
+                    },
                     {
                       "text": "this month ?false\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-19T10:07:05.908Z",
-                  "attachments": []
+                  "startTime": "2023-07-19T11:55:09.784Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\tests-8_calendar-Calendar-demo-using-moment\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\tests-8_calendar-Calendar-demo-using-moment\\test-failed-1.png"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "299738994f767a9c10d6-f8c42cd0004f23f9b722",

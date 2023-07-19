@@ -39,7 +39,7 @@ test("Calendar demo", async ({ page }) => {
     await page.waitForTimeout(3000);
 })
 
- //MOMENT, nicht so einfach :((
+ //Das Thema MOMENT, nicht so einfach :((
     //package.json >> moment  
     //video  min 2.59
     //zuerst führt "npm install moment", danach "import moment from "moment""" >> ganz oben
@@ -47,30 +47,39 @@ test("Calendar demo", async ({ page }) => {
 test.only("Calendar demo using moment", async ({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo");
    
-    await page.click("//input[@placeholder='Start date']");
+    await salectDate(12, "December 2022");
 
-    const mmYY = page.locator("(//th[@class='datepicker-switch'])[1]");
-    const prev = page.locator("(//th[@class='prev'])[1]");
-    const next = page.locator("(//th[@class='next'])[1]");
+    await page.reload();
 
-    await prev.click();
-    await page.click("//td[@class='day'][text()='5']");
-   
-    let dateToSelect: string = "December 2023"
+    await salectDate(5, "December 2023");
 
-    //***
-    const thisMonth = moment(dateToSelect, "MMMM YYYY").isBefore();
-    console.log("this month ?" + thisMonth);
+    await page.reload();
 
-    while (await mmYY.textContent() != dateToSelect) {
-        if (thisMonth) {
-            await prev.click();
-        } else 
-        await next.click();        
-    }
-    await page.click("//td[@class='day'][text()='12']");
+    await salectDate(2, "July 2022");
 
     await page.waitForTimeout(3000);
-
   
+//extracting this block to inner function, video min 3.07-3.13
+    async function salectDate(date: number, dateToSelect: string) {
+        await page.click("//input[@placeholder='Start date']");
+ 
+        const mmYY = page.locator("(//th[@class='datepicker-switch'])[1]");
+        const prev = page.locator("(//th[@class='prev'])[1]");
+        const next = page.locator("(//th[@class='next'])[1]");
+
+    //    let dateToSelect: string = "December 2022";
+
+        const thisMonth = moment(dateToSelect, "MMMM YYYY").isBefore();
+        console.log("this month ?" + thisMonth);
+
+        while (await mmYY.textContent() != dateToSelect) {
+            if (thisMonth) {
+                await prev.click();
+            }
+            else {
+                await next.click();
+        }
+      }
+      await page.click(`//td[@class='day'][text()='${date}']`);        //pass auf zeichen
+    }
 })
