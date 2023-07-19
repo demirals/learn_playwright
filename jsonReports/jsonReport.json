@@ -20,7 +20,7 @@
         "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/8_calendar.test.ts"
+          "tests/9_uploadDownload.test.ts"
         ],
         "timeout": 30000
       }
@@ -58,14 +58,14 @@
   },
   "suites": [
     {
-      "title": "tests\\8_calendar.test.ts",
-      "file": "tests/8_calendar.test.ts",
+      "title": "tests\\9_uploadDownload.test.ts",
+      "file": "tests/9_uploadDownload.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Calendar demo using moment",
-          "ok": false,
+          "title": "Upload files other way",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -77,50 +77,26 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30010,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "message": "Pending operations:\n  - locator.click at tests\\8_calendar.test.ts:80:28\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 8348,
+                  "errors": [],
                   "stdout": [
                     {
-                      "text": "this month ?true\n"
-                    },
-                    {
-                      "text": "this month ?false\n"
+                      "text": "\u001b[33mtrue\u001b[39m\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-19T11:55:09.784Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\tests-8_calendar-Calendar-demo-using-moment\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\tests-8_calendar-Calendar-demo-using-moment\\test-failed-1.png"
-                    }
-                  ]
+                  "startTime": "2023-07-19T13:19:39.378Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "299738994f767a9c10d6-f8c42cd0004f23f9b722",
-          "file": "tests/8_calendar.test.ts",
-          "line": 47,
+          "id": "305c2162e3bcf23d3d2a-b1fe4a4fa6f4b4a1a89c",
+          "file": "tests/9_uploadDownload.test.ts",
+          "line": 60,
           "column": 6
         }
       ]
