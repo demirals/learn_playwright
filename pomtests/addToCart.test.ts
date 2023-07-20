@@ -10,6 +10,7 @@ import HomePage from "../pages/homePage"
 const email = "Koushik02@mailinator.com";   //pass auf hier, global
 const password = "Koushik@123";
 
+test.describe("POM Test Demo", async () => {                     //take all tests under describe
 test("Register test_01 ", async({ page, baseURL }) => {
 
     const register = new RegisterPage(page);                    //page hier = kommt aus constructor
@@ -28,12 +29,27 @@ test("Register test_01 ", async({ page, baseURL }) => {
 
 })
 
-test.only("Login test_02", async ({ page, baseURL}) => {
+test("Login test_02", async ({ page, baseURL}) => {
     const login = new LoginPage(page);
     await page.goto(`${baseURL}route=account/login`)
-    await login.enterEmail(email);
-    await login.enterLoginPassword(password);
-    await login.clickLoginBtn();
+    await login.enterEmail(email);                   //thiese 3 lines we have added to login function in page, ab next test we will use it
+    await login.enterLoginPassword(password);         //
+    await login.clickLoginBtn();                       //
     expect(await page.title()).toBe("My Account");
 
 } )
+
+test.only("Add to cart_03", async ({ page, baseURL }) => {
+
+    const login = new LoginPage(page);
+    const homePage = new HomePage(page);
+    const homeMenuPage = new HomeMenuPage(page);
+
+    await page.goto(`${baseURL}route=account/login`)
+    await login.login(email, password);    //func
+    await homePage.clickOnHomeMenu();
+    await homeMenuPage.addFirstProductToTheCart();
+    const isCartVisible = await homeMenuPage.isProductVisible();
+    expect(isCartVisible).toBeVisible();
+})
+})

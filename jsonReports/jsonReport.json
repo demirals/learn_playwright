@@ -62,38 +62,68 @@
       "file": "pomtests/addToCart.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Login test_02",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "POM Test Demo",
+          "file": "pomtests/addToCart.test.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
+              "title": "Add to cart_03",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 8351,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-07-20T12:50:23.530Z",
-                  "attachments": []
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30005,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "message": "Pending operations:\n  - page.click at pages\\homeMenuPage.ts:12:25\n"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-20T14:00:14.905Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\pomtests-addToCart-POM-Test-Demo-Add-to-cart-03\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\pomtests-addToCart-POM-Test-Demo-Add-to-cart-03\\test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
-              "status": "expected"
+              "id": "5562f48897df24eb67b8-070c6e533a44bee3d037",
+              "file": "pomtests/addToCart.test.ts",
+              "line": 42,
+              "column": 6
             }
-          ],
-          "id": "5562f48897df24eb67b8-e42e92103ff9b4ce5938",
-          "file": "pomtests/addToCart.test.ts",
-          "line": 31,
-          "column": 6
+          ]
         }
       ]
     }

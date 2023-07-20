@@ -9,10 +9,10 @@ export default class HomeMenuPage{
         await this.page.hover("(//div[@class='carousel-item active']//img)[2]", {
             strict: false
         });
-        await this.page.click("(//i[@class='fas fa-shopping-cart'])[1]")
+        await this.page.click("(//button[@title='Add to Cart']//i)[1]")
     }
 
-    async isProductVisible(){
+    async isProductVisible(){                                                      //is toast visible ?
         const product = this.page.locator("//a[contains(.,'View Cart')]");
         await product.waitFor({state:"visible"})
         return product;

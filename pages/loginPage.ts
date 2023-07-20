@@ -1,7 +1,16 @@
 import { Page } from "@playwright/test";
 
 export default class LoginPage{
-//we are writing const. and functions for lacaters
+
+//since login is a precondition, we make it a function
+async login(email:string, password:string){
+
+    await this.enterEmail(email);
+    await this.enterLoginPassword(password);
+    await this.clickLoginBtn();
+}
+
+    //we are writing const. and functions for lacaters
 
 constructor(public page: Page){ }
 
