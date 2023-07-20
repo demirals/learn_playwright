@@ -1,8 +1,9 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
 // testMatch : zu führende tests hier schreiben, wenn wir commentieren testmatch, erscheint play buttons    
-testMatch: ["tests/9_uploadDownload.test.ts"],
+testMatch: ["pomtests/addToCart.test.ts"],
  use: {
+  baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",  
   headless:false,
   screenshot: "only-on-failure",
   video:"retain-on-failure",

@@ -12,15 +12,15 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
+        "outputDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+        "testDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/?(*.)@(spec|test).*"
+          "pomtests/addToCart.test.ts"
         ],
         "timeout": 30000
       }
@@ -47,8 +47,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
-    "rootDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+    "configFile": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\4_alerts.test.ts",
-      "file": "tests/4_alerts.test.ts",
+      "title": "pomtests\\addToCart.test.ts",
+      "file": "pomtests/addToCart.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "handling alerts - javascript alert box",
+          "title": "Login test_02",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,26 +78,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4170,
+                  "duration": 8351,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Alert box!\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-19T14:56:24.045Z",
+                  "startTime": "2023-07-20T12:50:23.530Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "7bbe4097d4b2689f53ec-ac5a116538a027c91c6c",
-          "file": "tests/4_alerts.test.ts",
-          "line": 7,
-          "column": 5
+          "id": "5562f48897df24eb67b8-e42e92103ff9b4ce5938",
+          "file": "pomtests/addToCart.test.ts",
+          "line": 31,
+          "column": 6
         }
       ]
     }

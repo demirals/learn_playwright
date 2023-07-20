@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test"
 
-export default class homeMenuPage{
+export default class HomeMenuPage{
 
 
     constructor(public page: Page){    }

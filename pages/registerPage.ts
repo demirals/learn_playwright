@@ -41,11 +41,15 @@ async isSubscribeChecked(){
 }
 
 async clickTermAndConditions(){
-    await this.page.click("#input[name='agree']")
+     
+    await this.page.click("//label[@for='input-agree']")
         
 }
 
 async clickConinueToRegister(){
-    await this.page.click("input[value='Continue']");
+ //   await Promise.all([
+ //       this.page.waitForNavigation({waitUntil: "networkidle"})  //deprecated
+ //   ])
+    await this.page.click("//input[@value='Continue']");
 }
 }

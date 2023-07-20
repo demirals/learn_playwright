@@ -16,7 +16,13 @@ async enterLoginPassword(password: string){
 }
 
 async clickLoginBtn(){
-    await this.page.click("input[value='Login']");
+
+    await Promise.all([
+
+        this.page.waitForEvent("load"),  //instead of waitFornavigation I have used, but I m not sure
+        this.page.click("input[value='Login']")
+    ])
+    
 }
 
 }
