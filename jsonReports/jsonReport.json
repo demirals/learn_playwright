@@ -12,12 +12,12 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
+        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
           "pomtests/addToCart.test.ts"
@@ -47,8 +47,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+    "configFile": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
+    "rootDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -71,8 +71,8 @@
           "column": 6,
           "specs": [
             {
-              "title": "Add to cart_03",
-              "ok": false,
+              "title": "Register test_01 ",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -84,44 +84,87 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "timedOut",
-                      "duration": 30005,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "message": "Pending operations:\n  - page.click at pages\\homeMenuPage.ts:12:25\n"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 13510,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-07-20T14:00:14.905Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\pomtests-addToCart-POM-Test-Demo-Add-to-cart-03\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\pomtests-addToCart-POM-Test-Demo-Add-to-cart-03\\test-failed-1.png"
-                        }
-                      ]
+                      "startTime": "2023-07-20T14:14:53.889Z",
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
+                }
+              ],
+              "id": "5562f48897df24eb67b8-c6ea849714fa74626034",
+              "file": "pomtests/addToCart.test.ts",
+              "line": 14,
+              "column": 5
+            },
+            {
+              "title": "Login test_02",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 7631,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-20T14:15:07.720Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5562f48897df24eb67b8-f66baca1d08b509c0787",
+              "file": "pomtests/addToCart.test.ts",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "Add to cart_03",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 13784,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-20T14:15:15.352Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "5562f48897df24eb67b8-070c6e533a44bee3d037",
               "file": "pomtests/addToCart.test.ts",
               "line": 42,
-              "column": 6
+              "column": 5
             }
           ]
         }

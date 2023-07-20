@@ -7,7 +7,7 @@ import HomeMenuPage from "../pages/homeMenuPage"
 import HomePage from "../pages/homePage"
 
 
-const email = "Koushik02@mailinator.com";   //pass auf hier, global
+const email = "Koushik255@mailinator.com";   //pass auf hier, global
 const password = "Koushik@123";
 
 test.describe("POM Test Demo", async () => {                     //take all tests under describe
@@ -39,7 +39,7 @@ test("Login test_02", async ({ page, baseURL}) => {
 
 } )
 
-test.only("Add to cart_03", async ({ page, baseURL }) => {
+test("Add to cart_03", async ({ page, baseURL }) => {
 
     const login = new LoginPage(page);
     const homePage = new HomePage(page);
@@ -53,3 +53,6 @@ test.only("Add to cart_03", async ({ page, baseURL }) => {
     expect(isCartVisible).toBeVisible();
 })
 })
+
+
+//4.22 de kaldim
