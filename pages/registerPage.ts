@@ -36,12 +36,12 @@ async enterConfirmPassword(password: string){
 }
 
 async isSubscribeChecked(){
-    return await this.page.locator("#input-newsletter-no").isChecked();            //Promise >> boolian
+    return await this.page.locator("#input-newsletter-no");            
         
 }
 
 async clickTermAndConditions(){
-    await this.page.locator("#input[name='agree']")
+    await this.page.click("#input[name='agree']")
         
 }
 

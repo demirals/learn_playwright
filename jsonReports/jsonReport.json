@@ -20,7 +20,7 @@
         "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/9_uploadDownload.test.ts"
+          "**/?(*.)@(spec|test).*"
         ],
         "timeout": 30000
       }
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\9_uploadDownload.test.ts",
-      "file": "tests/9_uploadDownload.test.ts",
+      "title": "tests\\4_alerts.test.ts",
+      "file": "tests/4_alerts.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Upload files other way",
+          "title": "handling alerts - javascript alert box",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,26 +78,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8348,
+                  "duration": 4170,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
+                      "text": "Alert box!\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-19T13:19:39.378Z",
+                  "startTime": "2023-07-19T14:56:24.045Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "305c2162e3bcf23d3d2a-b1fe4a4fa6f4b4a1a89c",
-          "file": "tests/9_uploadDownload.test.ts",
-          "line": 60,
-          "column": 6
+          "id": "7bbe4097d4b2689f53ec-ac5a116538a027c91c6c",
+          "file": "tests/4_alerts.test.ts",
+          "line": 7,
+          "column": 5
         }
       ]
     }
