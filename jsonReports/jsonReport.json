@@ -20,7 +20,7 @@
         "testDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "pomtests/12_addToCartUsingFixture.test.ts"
+          "pomtests/13_addToCartUsingFixture_usingData.test.ts"
         ],
         "timeout": 30000
       }
@@ -58,16 +58,16 @@
   },
   "suites": [
     {
-      "title": "pomtests\\12_addToCartUsingFixture.test.ts",
-      "file": "pomtests/12_addToCartUsingFixture.test.ts",
+      "title": "pomtests\\13_addToCartUsingFixture_usingData.test.ts",
+      "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "POM Test Demo",
-          "file": "pomtests/12_addToCartUsingFixture.test.ts",
-          "line": 7,
+          "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
+          "line": 5,
           "column": 6,
           "specs": [
             {
@@ -85,21 +85,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 13874,
+                      "duration": 13695,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-07-21T09:06:27.262Z",
+                      "startTime": "2023-07-21T09:46:38.103Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "dea64129e6e4699c1cc2-791ff11fa010d411f1c8",
-              "file": "pomtests/12_addToCartUsingFixture.test.ts",
-              "line": 9,
+              "id": "6cf982dddfa1c985b5e8-28cf8c6848cdda5db1b9",
+              "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
+              "line": 7,
               "column": 5
             },
             {
@@ -117,21 +117,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 7977,
+                      "duration": 7998,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-07-21T09:06:42.057Z",
+                      "startTime": "2023-07-21T09:46:52.360Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "dea64129e6e4699c1cc2-db0ee484e8eb7305d441",
-              "file": "pomtests/12_addToCartUsingFixture.test.ts",
-              "line": 23,
+              "id": "6cf982dddfa1c985b5e8-59207a8f8edd5827819e",
+              "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
+              "line": 20,
               "column": 5
             },
             {
@@ -149,21 +149,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 16104,
+                      "duration": 14843,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-07-21T09:06:50.036Z",
+                      "startTime": "2023-07-21T09:47:00.359Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "dea64129e6e4699c1cc2-7df2e3771847d56d7a5e",
-              "file": "pomtests/12_addToCartUsingFixture.test.ts",
-              "line": 31,
+              "id": "6cf982dddfa1c985b5e8-d334b29a11370e9c1d74",
+              "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
+              "line": 28,
               "column": 5
             }
           ]

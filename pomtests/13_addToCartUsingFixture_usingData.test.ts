@@ -1,40 +1,33 @@
-//video min 4.41
+//video min 4.47
 import { expect, test } from "../base/pomFixture";
-
-const email = "Koushik255@mailinator.com";   //pass auf hier, global
-const password = "Koushik@123";
+import * as data from "../test-data/addToChart-test-data.json";
 
 test.describe("POM Test Demo", async () => {                     
     
 test("Register test_01 ", async({ page, baseURL, registerPage }) => {           //added registerPage         
     await page.goto(`${baseURL}route=account/register`);
-    await registerPage.enterFirstName("Koushik");
-    await registerPage.enterLastName("Cheet");
-    await registerPage.enterEmail(email);               
-    await registerPage.enterTelephone("1234567890");
-    await registerPage.enterPassword(password);
-    await registerPage.enterConfirmPassword(password);
+    await registerPage.enterFirstName(data.firstname);
+    await registerPage.enterLastName(data.lastname);
+    await registerPage.enterEmail(data.email);               
+    await registerPage.enterTelephone(data.telephone);
+    await registerPage.enterPassword(data.password);
+    await registerPage.enterConfirmPassword(data.password);
 //    expect(registerPage.isSubscribeChecked()).toBeChecked();       //?? to BeChecked is unknown method   
     await registerPage.clickTermAndConditions();
-    await registerPage.clickConinueToRegister();
-
-    //using json file instead hard coded data>> video min 4.47
-    //creating test-data folder and json file in it
-
-
+    await registerPage.clickConinueToRegister();    
 })
 
 test("Login test_02", async ({ page, baseURL, loginPage}) => {
     await page.goto(`${baseURL}route=account/login`)
-    await loginPage.enterEmail(email);                   
-    await loginPage.enterLoginPassword(password);         
+    await loginPage.enterEmail(data.email);                   
+    await loginPage.enterLoginPassword(data.password);         
     await loginPage.clickLoginBtn();                       
     expect(await page.title()).toBe("My Account");
 } )
 
 test("Add to cart_03", async ({ page, baseURL, loginPage, homePage, homeMenuPage }) => {
     await page.goto(`${baseURL}route=account/login`)
-    await loginPage.login(email, password);   
+    await loginPage.login(data.email, data.password);   
     await homePage.clickOnHomeMenu();
     await homeMenuPage.addFirstProductToTheCart();
     const isCartVisible = await homeMenuPage.isProductVisible();
