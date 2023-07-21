@@ -12,15 +12,15 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
+        "outputDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+        "testDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "pomtests/addToCart.test.ts"
+          "pomtests/12_addToCartUsingFixture.test.ts"
         ],
         "timeout": 30000
       }
@@ -47,8 +47,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
-    "rootDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+    "configFile": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -58,16 +58,16 @@
   },
   "suites": [
     {
-      "title": "pomtests\\addToCart.test.ts",
-      "file": "pomtests/addToCart.test.ts",
+      "title": "pomtests\\12_addToCartUsingFixture.test.ts",
+      "file": "pomtests/12_addToCartUsingFixture.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "POM Test Demo",
-          "file": "pomtests/addToCart.test.ts",
-          "line": 13,
+          "file": "pomtests/12_addToCartUsingFixture.test.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
@@ -85,21 +85,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 13510,
+                      "duration": 13874,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-07-20T14:14:53.889Z",
+                      "startTime": "2023-07-21T09:06:27.262Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "5562f48897df24eb67b8-c6ea849714fa74626034",
-              "file": "pomtests/addToCart.test.ts",
-              "line": 14,
+              "id": "dea64129e6e4699c1cc2-791ff11fa010d411f1c8",
+              "file": "pomtests/12_addToCartUsingFixture.test.ts",
+              "line": 9,
               "column": 5
             },
             {
@@ -117,21 +117,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 7631,
+                      "duration": 7977,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-07-20T14:15:07.720Z",
+                      "startTime": "2023-07-21T09:06:42.057Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "5562f48897df24eb67b8-f66baca1d08b509c0787",
-              "file": "pomtests/addToCart.test.ts",
-              "line": 32,
+              "id": "dea64129e6e4699c1cc2-db0ee484e8eb7305d441",
+              "file": "pomtests/12_addToCartUsingFixture.test.ts",
+              "line": 23,
               "column": 5
             },
             {
@@ -149,21 +149,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 13784,
+                      "duration": 16104,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-07-20T14:15:15.352Z",
+                      "startTime": "2023-07-21T09:06:50.036Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "5562f48897df24eb67b8-070c6e533a44bee3d037",
-              "file": "pomtests/addToCart.test.ts",
-              "line": 42,
+              "id": "dea64129e6e4699c1cc2-7df2e3771847d56d7a5e",
+              "file": "pomtests/12_addToCartUsingFixture.test.ts",
+              "line": 31,
               "column": 5
             }
           ]

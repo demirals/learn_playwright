@@ -6,11 +6,14 @@ import { chromium, test, expect } from '@playwright/test';
 
 test("login test demo", async () => {
 
+  //if we use fixture, we dont need these 3 lines
+  //playwright testrunner give all the hooks, preconditions etc..
   const browser = await chromium.launch({
       headless: false
   });
   const context = await browser.newContext();
   const page = await context.newPage();
+
 
   await page.goto("https://ecommerce-playground.lambdatest.io/");
   await page.hover("//a[@data-toggle='dropdown']//span[contains(.,'My account')]");

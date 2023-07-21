@@ -1,10 +1,10 @@
 //video min 4.02
 
 import { expect, test } from "@playwright/test";
-import RegisterPage from "../pages/registerPage"
-import LoginPage from "../pages/loginPage"
-import HomeMenuPage from "../pages/homeMenuPage"
-import HomePage from "../pages/homePage"
+//import RegisterPage from "../pages/registerPage"   >>   we have imported these classes in pomFixture.ts
+//import LoginPage from "../pages/loginPage"
+//import HomeMenuPage from "../pages/homeMenuPage"
+//import HomePage from "../pages/homePage"
 
 
 const email = "Koushik255@mailinator.com";   //pass auf hier, global
@@ -53,6 +53,3 @@ test("Add to cart_03", async ({ page, baseURL }) => {
     expect(isCartVisible).toBeVisible();
 })
 })
-
-
-//4.22 de kaldim
