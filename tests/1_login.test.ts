@@ -1,6 +1,7 @@
 //Video min 10.10
 //newContext >> verhindert alte cookies, password usw auf nue Webpage
 // ctrl + L >> clear terminal nach oben 
+//npx playwright test ./tests/1_login.test.ts --ui   >>  ui mode
 
 import { chromium, test, expect } from '@playwright/test';
 
