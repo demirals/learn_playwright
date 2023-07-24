@@ -2,7 +2,12 @@
 import { expect, test } from "../base/pomFixture";
 import * as data from "../test-data/addToChart-test-data.json";
 
-test.describe("POM Test Demo", async () => {                     
+//you can specify browser etc..with "use";   video min 4.57  
+//test.use({
+//    browserName: "firefox"
+//})         >> we do it in config datei with "projects"
+
+test.describe("POM Test Demo", async () => {       
     
 test("Register test_01 ", async({ page, baseURL, registerPage }) => {           //added registerPage         
     await page.goto(`${baseURL}route=account/register`);

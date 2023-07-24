@@ -1,4 +1,6 @@
 //Video min 34.10
+//PWDEBUG=1   >> debugging step to step
+//DEBUG=pw:api
 
 //npx playwright codegen >> playwright inspector, copy die code from inspector
 //Auf recorder Rechts oben kann man kein playwright wählen, das ist ein Fehler

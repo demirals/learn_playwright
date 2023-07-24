@@ -12,15 +12,28 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
+        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "",
-        "name": "",
-        "testDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "pomtests/13_addToCartUsingFixture_usingData.test.ts"
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
         ],
         "timeout": 30000
       }
@@ -47,8 +60,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+    "configFile": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
+    "rootDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -58,115 +71,42 @@
   },
   "suites": [
     {
-      "title": "pomtests\\13_addToCartUsingFixture_usingData.test.ts",
-      "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
+      "title": "tests\\14_login_lambdatest.test.ts",
+      "file": "tests/14_login_lambdatest.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "POM Test Demo",
-          "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
-          "line": 5,
-          "column": 6,
-          "specs": [
+          "title": "login test demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Register test_01 ",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 13695,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-07-21T09:46:38.103Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 10719,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-07-21T11:21:54.172Z",
+                  "attachments": []
                 }
               ],
-              "id": "6cf982dddfa1c985b5e8-28cf8c6848cdda5db1b9",
-              "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
-              "line": 7,
-              "column": 5
-            },
-            {
-              "title": "Login test_02",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 7998,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-07-21T09:46:52.360Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6cf982dddfa1c985b5e8-59207a8f8edd5827819e",
-              "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
-              "line": 20,
-              "column": 5
-            },
-            {
-              "title": "Add to cart_03",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 14843,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-07-21T09:47:00.359Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6cf982dddfa1c985b5e8-d334b29a11370e9c1d74",
-              "file": "pomtests/13_addToCartUsingFixture_usingData.test.ts",
-              "line": 28,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "501cf08ce856b801f90a-f6fd74662e1fd63135a1",
+          "file": "tests/14_login_lambdatest.test.ts",
+          "line": 5,
+          "column": 5
         }
       ]
     }

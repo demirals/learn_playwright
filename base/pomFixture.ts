@@ -1,4 +1,4 @@
-import { test as baseTest } from "@playwright/test";
+import { test as baseTest } from "@playwright/test";  //give an alias to test
 import RegisterPage from "../pages/registerPage"
 import LoginPage from "../pages/loginPage"
 import HomeMenuPage from "../pages/homeMenuPage"
