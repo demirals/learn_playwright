@@ -45,21 +45,12 @@ test("Calendar demo", async ({ page }) => {
     //video  min 2.59
     //zuerst führt "npm install moment", danach "import moment from "moment""" >> ganz oben
 
-test.only("Calendar demo using moment", async ({ page }) => {
+test("Calendar demo using moment", async ({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo");
    
-    await salectDate(12, "December 2022");
+    await salectDate(13, "November 2023");
 
-    await page.reload();
-
-    await salectDate(5, "December 2023");
-
-    await page.reload();
-
-    await salectDate(2, "July 2022");
-
-    await page.waitForTimeout(3000);
-  
+ 
 //extracting this block to inner function, video min 3.07-3.13
     async function salectDate(date: number, dateToSelect: string) {
         await page.click("//input[@placeholder='Start date']");
@@ -67,10 +58,11 @@ test.only("Calendar demo using moment", async ({ page }) => {
         const mmYY = page.locator("(//th[@class='datepicker-switch'])[1]");
         const prev = page.locator("(//th[@class='prev'])[1]");
         const next = page.locator("(//th[@class='next'])[1]");
-
-    //    let dateToSelect: string = "December 2022";
-
+    
         const thisMonth = moment(dateToSelect, "MMMM YYYY").isBefore();
+
+        //** Moment definiert if the target date is before or after our aktual date, boolean value  
+
         console.log("this month ?" + thisMonth);
 
         while (await mmYY.textContent() != dateToSelect) {

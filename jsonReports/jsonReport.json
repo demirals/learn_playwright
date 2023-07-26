@@ -71,14 +71,14 @@
   },
   "suites": [
     {
-      "title": "tests\\14_login_lambdatest.test.ts",
-      "file": "tests/14_login_lambdatest.test.ts",
+      "title": "tests\\8_calendar.test.ts",
+      "file": "tests/8_calendar.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "login test demo",
-          "ok": true,
+          "title": "Calendar demo using moment",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -90,22 +90,50 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 10719,
-                  "errors": [],
-                  "stdout": [],
+                  "status": "failed",
+                  "duration": 27653,
+                  "error": {
+                    "message": "page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//td[@class=\\'day\\'][text()=\\'12\\']')\n============================================================",
+                    "stack": "Error: page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//td[@class=\\'day\\'][text()=\\'12\\']')\n============================================================\n    at salectDate (c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts:86:18)\n    at c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts:51:5"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts",
+                        "column": 18,
+                        "line": 86
+                      },
+                      "message": "Error: page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//td[@class=\\'day\\'][text()=\\'12\\']')\n============================================================\n\n\u001b[90m   at \u001b[39mtests\\8_calendar.test.ts:86\n\n  84 |         }\n  85 |       }\n> 86 |       await page.click(`//td[@class='day'][text()='${date}']`);        //pass auf zeichen\n     |                  ^\n  87 |     }\n  88 | })\n\n\u001b[2m    at salectDate (c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts:86:18)\u001b[22m\n\u001b[2m    at c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts:51:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "this month ?false\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-21T11:21:54.172Z",
-                  "attachments": []
+                  "startTime": "2023-07-26T13:00:55.539Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\tests-8_calendar-Calendar-demo-using-moment-chrome\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts",
+                    "column": 18,
+                    "line": 86
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "501cf08ce856b801f90a-f6fd74662e1fd63135a1",
-          "file": "tests/14_login_lambdatest.test.ts",
-          "line": 5,
+          "id": "299738994f767a9c10d6-930d8321973766486343",
+          "file": "tests/8_calendar.test.ts",
+          "line": 48,
           "column": 5
         }
       ]
