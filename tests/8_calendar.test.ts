@@ -33,9 +33,10 @@ test("Calendar demo", async ({ page }) => {
 
     while (await mmYY.textContent() != dateToSelect) {
         await prev.click();
-        //await page.click("//td[@class='day'][text()='5']");
+        
     }
 
+    await page.click("//td[@class='day'][text()='6']");
     await page.waitForTimeout(3000);
 })
 
