@@ -91,12 +91,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9058,
+                  "duration": 9057,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-27T11:23:39.093Z",
+                  "startTime": "2023-07-27T13:37:26.830Z",
                   "attachments": []
                 }
               ],
