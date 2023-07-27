@@ -1,6 +1,6 @@
 pipeline {
   agent { 
-    any { 
+    docker { 
       image 'mcr.microsoft.com/playwright:v1.17.2-focal'
     } 
   }
@@ -22,7 +22,7 @@ pipeline {
       steps {
         sh '''
           npx playwright test --list
-          npx playwright test 
+          npx playwright test
         '''
       }
       post {
@@ -30,6 +30,7 @@ pipeline {
           archiveArtifacts(artifacts: 'homepage-*.png', followSymlinks: false)
           sh 'rm -rf *.png'
         }
+      }
     }
   }
 }
