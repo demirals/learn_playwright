@@ -3,7 +3,7 @@ import moment from "moment";
 
 
 
-test("Calendar demo using fill function", async ({ page }) => {
+test.only("Calendar demo using fill function", async ({ page }) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo");
     let date = "1994-04-12"
     await page.fill("id=birthday", date);

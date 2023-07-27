@@ -20,7 +20,7 @@
         "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/?(*.)@(spec|test).*"
+          "tests/8_calendar.test.ts"
         ],
         "timeout": 30000
       },
@@ -33,7 +33,7 @@
         "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/?(*.)@(spec|test).*"
+          "tests/8_calendar.test.ts"
         ],
         "timeout": 30000
       }
@@ -77,8 +77,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "Calendar demo using moment",
-          "ok": false,
+          "title": "Calendar demo using fill function",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -90,51 +90,23 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 27653,
-                  "error": {
-                    "message": "page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//td[@class=\\'day\\'][text()=\\'12\\']')\n============================================================",
-                    "stack": "Error: page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//td[@class=\\'day\\'][text()=\\'12\\']')\n============================================================\n    at salectDate (c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts:86:18)\n    at c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts:51:5"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts",
-                        "column": 18,
-                        "line": 86
-                      },
-                      "message": "Error: page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//td[@class=\\'day\\'][text()=\\'12\\']')\n============================================================\n\n\u001b[90m   at \u001b[39mtests\\8_calendar.test.ts:86\n\n  84 |         }\n  85 |       }\n> 86 |       await page.click(`//td[@class='day'][text()='${date}']`);        //pass auf zeichen\n     |                  ^\n  87 |     }\n  88 | })\n\n\u001b[2m    at salectDate (c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts:86:18)\u001b[22m\n\u001b[2m    at c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts:51:5\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "this month ?false\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 9058,
+                  "errors": [],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-26T13:00:55.539Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\test-results\\tests-8_calendar-Calendar-demo-using-moment-chrome\\video.webm"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\tests\\8_calendar.test.ts",
-                    "column": 18,
-                    "line": 86
-                  }
+                  "startTime": "2023-07-27T11:23:39.093Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "299738994f767a9c10d6-930d8321973766486343",
+          "id": "299738994f767a9c10d6-89b289e42a457a31057a",
           "file": "tests/8_calendar.test.ts",
-          "line": 48,
-          "column": 5
+          "line": 6,
+          "column": 6
         }
       ]
     }
