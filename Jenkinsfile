@@ -11,8 +11,6 @@ pipeline {
         sh 'docker run -it mcr.microsoft.com/playwright:v1.17.2-focal:latest'
       }
     }
-
-stages {
     stage('install playwright') {
       steps {
         sh '''
@@ -41,4 +39,4 @@ stages {
       }
     }
   }
-}}
+}
