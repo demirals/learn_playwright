@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Pull') {
       steps {
-        sh 'docker pull mcr.microsoft.com/playwright:v1.17.2-focal:latest'
+        sh 'docker pull mcr.microsoft.com/playwright:v1.17.2-focal'
       }
     }
     stage('Run') {
       steps {
-        sh 'docker run -it mcr.microsoft.com/playwright:v1.17.2-focal:latest'
+        sh 'docker run -it mcr.microsoft.com/playwright:v1.17.2-focal'
       }
     }
     stage('install playwright') {
@@ -30,12 +30,6 @@ pipeline {
           npx playwright test --list
           npx playwright test
         '''
-      }
-      post {
-        success {
-          archiveArtifacts(artifacts: 'homepage-*.png', followSymlinks: false)
-          sh 'rm -rf *.png'
-        }
       }
     }
   }
