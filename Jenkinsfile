@@ -1,16 +1,7 @@
 pipeline {
-  agent any 
-  stages {
-    stage('Pull') {
-      steps {
-        sh 'docker pull mcr.microsoft.com/playwright:v1.17.2-focal'
+  agent any   {
+        image 'docker pull mcr.microsoft.com/playwright:v1.17.2-focal'
       }
-    }
-    stage('Run') {
-      steps {
-        sh 'docker run -it mcr.microsoft.com/playwright:v1.17.2-focal'
-      }
-    }
     stage('install playwright') {
       steps {
         sh '''
@@ -33,4 +24,3 @@ pipeline {
       }
     }
   }
-}
