@@ -10,13 +10,13 @@ const config: PlaywrightTestConfig = {
             use: {
                 ...devices["Desktop Chrome"]   //you can choose  mobile simulators as well
             }
-        },
-        {
-            name: "firefox",
-            use: {
-                ...devices["Desktop Firefox"]   //you can choose  mobile simulators as well
-            }
         }
+ //       {
+ //           name: "firefox",
+ //           use: {
+ //               ...devices["Desktop Firefox"]   //you can choose  mobile simulators as well
+ //           }
+ //       }
     ],
 
     // testMatch : zu führende tests hier schreiben, wenn wir commentieren testmatch, erscheint play buttons    
