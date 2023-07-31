@@ -12,15 +12,15 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
+        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "chrome",
         "name": "chrome",
-        "testDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/100_handlingMultipleElements.spec.ts"
+          "tests/101_jenkinsTestFile.spec.ts"
         ],
         "timeout": 30000
       }
@@ -47,8 +47,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+    "configFile": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
+    "rootDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -58,18 +58,18 @@
   },
   "suites": [
     {
-      "title": "tests\\100_handlingMultipleElements.spec.ts",
-      "file": "tests/100_handlingMultipleElements.spec.ts",
+      "title": "tests\\101_jenkinsTestFile.spec.ts",
+      "file": "tests/101_jenkinsTestFile.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify navLinks",
+          "title": "Basic test for Jenkis",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 0,
+              "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chrome",
@@ -78,25 +78,21 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 494442,
+                  "duration": 5003,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  \u001b[32m\"FIFA WOMEN'S WORLD CUP 2023™\"\u001b[39m,\n  \u001b[32m'FIFA U-17 WORLD CUP 2023™'\u001b[39m,\n  \u001b[32m'FIFA CLUB WORLD CUP 2023™'\u001b[39m,\n  \u001b[32m'FIFA WORLD CUP 26™'\u001b[39m,\n  \u001b[32m'OTHER FIFA TOURNAMENTS'\u001b[39m,\n  \u001b[32m'RECENT TOURNAMENTS'\u001b[39m,\n  \u001b[32m'HOME'\u001b[39m,\n  \u001b[32m\"FIFA WOMEN'S WORLD CUP 2023™\"\u001b[39m,\n  \u001b[32m'RELIVE QATAR 2022™'\u001b[39m,\n  \u001b[32m'RELIVE U-20 WORLD CUP'\u001b[39m,\n  \u001b[32m'ORIGINALS'\u001b[39m,\n  \u001b[32m'ARCHIVE'\u001b[39m,\n  \u001b[32m'PLAY ZONE'\u001b[39m,\n  \u001b[32m'BRACKET CHALLENGE'\u001b[39m,\n  \u001b[32m'DAILY FANTASY'\u001b[39m,\n  \u001b[32m'MATCH PREDICTOR'\u001b[39m,\n  \u001b[32m'WHO AM I?'\u001b[39m,\n  \u001b[32m'TRIVIA'\u001b[39m,\n  \u001b[32m'PANINI COLLECTION'\u001b[39m,\n  \u001b[32m'ROBLOX FIFA WORLD'\u001b[39m,\n  \u001b[32m'MORE GAMES'\u001b[39m,\n  \u001b[32m'MATCH CENTRE'\u001b[39m,\n  \u001b[32m'LIVE STREAMING'\u001b[39m,\n  \u001b[32m'MEMBER ASSOCIATIONS'\u001b[39m,\n  \u001b[32m'HIGHLIGHTS'\u001b[39m,\n  \u001b[32m'FIFA STORE'\u001b[39m,\n  \u001b[32m'BUY TICKETS'\u001b[39m,\n  \u001b[32m'FIFA+ COLLECT'\u001b[39m,\n  \u001b[32m'NEWS'\u001b[39m,\n  \u001b[32m'OVERVIEW'\u001b[39m,\n  \u001b[32m'ABOUT FIFA'\u001b[39m,\n  \u001b[32m\"WOMEN'S FOOTBALL\"\u001b[39m,\n  \u001b[32m'SOCIAL IMPACT'\u001b[39m,\n  \u001b[32m'FOOTBALL DEVELOPMENT'\u001b[39m,\n  \u001b[32m'TECHNICAL'\u001b[39m,\n  \u001b[32m'LEGAL'\u001b[39m,\n  \u001b[32m'WORLD RANKING'\u001b[39m\n]\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-28T15:12:33.379Z",
+                  "startTime": "2023-07-31T07:56:00.855Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "68ee4ee4485cf7d06a75-328329e3f456233f9e5d",
-          "file": "tests/100_handlingMultipleElements.spec.ts",
-          "line": 7,
+          "id": "e7188113174986766c7e-681cd7e7c58d931553cc",
+          "file": "tests/101_jenkinsTestFile.spec.ts",
+          "line": 3,
           "column": 5
         }
       ]
