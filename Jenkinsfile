@@ -1,10 +1,11 @@
 pipeline {
   agent { 
     any   {
-  //      image 'mcr.microsoft.com/playwright:v1.17.2-focal'
+        image 'mcr.microsoft.com/playwright:v1.17.2-focal'
       }
   }
    stages {
+/*
     stage('install playwright') {
       steps {
         sh '''
@@ -18,6 +19,7 @@ pipeline {
         sh 'npx playwright test --help'
       }
     }
+    */
     stage('test') {
       steps {
         sh '''
