@@ -28,7 +28,7 @@ test("login test demo", async () => {
   await page.click("//input[@value='Login']");
   await page.waitForTimeout(5000);
   
-  // pass auf unten >> new context, öffnet neue unabhängiges Page
+  //   pass auf unten >> new context, öffnet neue unabhängiges Page
   const newContext = await browser.newContext();
   const newPage = await newContext.newPage();
   await newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/account");
