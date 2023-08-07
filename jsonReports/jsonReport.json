@@ -20,7 +20,7 @@
         "testDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/101_jenkinsTestFile.spec.ts"
+          "tests/1_login.test.ts"
         ],
         "timeout": 30000
       }
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\101_jenkinsTestFile.spec.ts",
-      "file": "tests/101_jenkinsTestFile.spec.ts",
+      "title": "tests\\1_login.test.ts",
+      "file": "tests/1_login.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Basic test for Jenkis",
+          "title": "login test demo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,21 +78,21 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5012,
+                  "duration": 25850,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-08-02T07:33:22.606Z",
+                  "startTime": "2023-08-07T10:17:07.066Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "e7188113174986766c7e-681cd7e7c58d931553cc",
-          "file": "tests/101_jenkinsTestFile.spec.ts",
-          "line": 3,
+          "id": "2cbf3376ad6d5d07573e-21532ec7ed2bb1bc9967",
+          "file": "tests/1_login.test.ts",
+          "line": 8,
           "column": 5
         }
       ]
