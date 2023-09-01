@@ -27,7 +27,7 @@ test("login test demo", async () => {
   await page.fill("input[id=input-password]", "Pass123$");
   await page.click("//input[@value='Login']");
   await page.waitForTimeout(5000);
-  // änderung1
+  // änderung2
   //    pass auf unten >> new context, öffnet neue unabhängiges Page
   const newContext = await browser.newContext();
   const newPage = await newContext.newPage();
