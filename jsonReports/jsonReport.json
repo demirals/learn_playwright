@@ -12,12 +12,12 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
+        "outputDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "chrome",
         "name": "chrome",
-        "testDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+        "testDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
           "tests/1_login.test.ts"
@@ -47,8 +47,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "C:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
+    "configFile": "c:\\Users\\Selami Demiral\\Desktop\\projects\\learn-playwright\\learn_playwright\\playwright.config.ts",
+    "rootDir": "c:/Users/Selami Demiral/Desktop/projects/learn-playwright/learn_playwright",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -78,12 +78,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 24571,
+                  "duration": 24682,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-08-08T14:50:16.292Z",
+                  "startTime": "2023-09-04T11:36:32.467Z",
                   "attachments": []
                 }
               ],
